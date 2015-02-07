@@ -1,0 +1,72 @@
+{
+    IBClasses = (
+        {CLASS = AudioFileListView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                appHelpLink = id; 
+                iaAUPopUpButtonPressed = id; 
+                iaAUTypeChanged = id; 
+                iaClearButtonPressed = id; 
+                iaMoveDownButtonPressed = id; 
+                iaMoveUpButtonPressed = id; 
+                iaPauseButtonPressed = id; 
+                iaPlayStopButtonPressed = id; 
+                iaSaveButtonPressed = id; 
+                iaSetMasterVolume = id; 
+                iaStopButtonPressed = id; 
+            }; 
+            CLASS = HostingWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                audioCounter = NSTextField; 
+                uiAUPopUpButton = NSPopUpButton; 
+                uiAUTypeMatrix = NSMatrix; 
+                uiAUViewContainer = NSBox; 
+                uiAudioFileButton = NSButton; 
+                uiAudioFileNowPlayingName = NSTextField; 
+                uiAudioFileTableView = AudioFileListView; 
+                uiClearButton = NSButton; 
+                uiMoveDownButton = NSButton; 
+                uiMoveUpButton = NSButton; 
+                uiParam1SliderKnob = NSView; 
+                uiPauseButton = NSButton; 
+                uiPlayStopButton = NSButton; 
+                uiSaveButton = NSButton; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            CLASS = MyApplication; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {hostWindow = NSWindow; }; 
+            SUPERCLASS = NSApplication; 
+        }, 
+        {
+            ACTIONS = {setAngle = id; }; 
+            CLASS = knobView; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {setAngle = id; }; 
+            CLASS = "pm_AudioKnob2"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {target = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {setAngle = id; }; 
+            CLASS = "pm_SliderKnob"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {target = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}

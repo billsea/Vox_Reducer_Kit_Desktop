@@ -1,0 +1,3 @@
+- This audio unit host was based on the sample code "CocoaAUHost" from apple. The .exe name (located in the "Products" folder) has been changed
+from CocoaAUHost.app to voxReducer.app, and there seems to be some issues with the executable. Look in the builds folder, and run whatever
+.exe is created, and change the name there. In the future you may want to create a new project, and import the source files from this project.

@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "voxReducerKit II";
+NSHumanReadableCopyright = "Copyright loudsoftware.com, 2009 - All Rights Reserved";
