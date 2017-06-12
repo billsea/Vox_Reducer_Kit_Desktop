@@ -604,12 +604,13 @@ void getComponentsForAUType(OSType inAUType, CAComponent *ioCompBuffer, int coun
     [self synchronizeForNewAUType];
     
 	// make this the app. delegate
-	[NSApp setDelegate:self];
-	
-	//set initial volume level to halfway
-	OSErr status;	
-	status = AudioUnitSetParameter(mOutputUnit, kHALOutputParam_Volume, kAudioUnitScope_Global, 0, 0.5, 0 );
-	[audioCounter setIntValue:5];
+    [NSApp setDelegate:self.owner];
+
+    // set initial volume level to halfway
+    OSErr status;
+    status = AudioUnitSetParameter(mOutputUnit, kHALOutputParam_Volume,
+                                   kAudioUnitScope_Global, 0, 0.5, 0);
+    [audioCounter setIntValue:5];
 	
 	
 	
